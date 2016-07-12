@@ -1,7 +1,7 @@
 Template.time.helpers({
   data: function() {
     var controller = Router.current();
-    var dateOrTime = controller.url.slice(22);
+    var dateOrTime = controller.url.slice(42);
     var date = 0, unix;
     var data = {};
     var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
@@ -26,7 +26,7 @@ Template.time.helpers({
     data = {date: date,
             unix: unix};
 
-    console.log(data);
+    console.log(controller);
     return data ;
   }
 });
