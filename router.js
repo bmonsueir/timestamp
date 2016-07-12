@@ -4,7 +4,7 @@ Router.configure({
 });
 
 Router.map(function(){
-
-    this.route('time', {path:'/'});
+    this.route('about', {path: '/'});
+    this.route('time', {path: '/:date'});
 
 });
